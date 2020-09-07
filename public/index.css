@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.clock {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border: 20px dodgerblue solid;
+    border-radius: 100%;
+    align-self: center;
+}
+
+.hand {
+    width: 40%;
+    background: black;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transition: all 0.05s;
+    transform-origin: 100%;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0, 2.76);
+    transform: rotate(90deg);
+}
+
+.second-hand {
+    background: red;
+}
